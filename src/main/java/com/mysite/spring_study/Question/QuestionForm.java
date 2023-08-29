@@ -1,4 +1,4 @@
-package com.mysite.spring_study.Question;
+package com.mysite.spring_study.question;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

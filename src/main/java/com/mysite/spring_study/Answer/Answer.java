@@ -1,8 +1,8 @@
-package com.mysite.spring_study.Answer;
+package com.mysite.spring_study.answer;
 
 import java.time.LocalDateTime;
 
-import com.mysite.spring_study.Question.Question;
+import com.mysite.spring_study.question.Question;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

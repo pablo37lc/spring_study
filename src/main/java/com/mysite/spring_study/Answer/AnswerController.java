@@ -1,4 +1,4 @@
-package com.mysite.spring_study.Answer;
+package com.mysite.spring_study.answer;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.mysite.spring_study.Question.Question;
-import com.mysite.spring_study.Question.QuestionService;
+import com.mysite.spring_study.question.Question;
+import com.mysite.spring_study.question.QuestionService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

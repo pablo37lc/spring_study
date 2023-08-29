@@ -1,10 +1,10 @@
-package com.mysite.spring_study.Answer;
+package com.mysite.spring_study.answer;
 
 import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Service;
 
-import com.mysite.spring_study.Question.Question;
+import com.mysite.spring_study.question.Question;
 
 import lombok.RequiredArgsConstructor;
 
