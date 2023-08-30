@@ -1,0 +1,15 @@
+2023-08-30 14:28:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete [*]* FROM QUESTION"; expected "identifier"; SQL statement:
+Delete * FROM QUESTION [42001-214]
+2023-08-30 14:29:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete [*]* FROM QUESTION WHERE id >4"; expected "identifier"; SQL statement:
+Delete * FROM QUESTION WHERE id >4 [42001-214]
+2023-08-30 14:29:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete [*]* FROM QUESTION WHERE id >4"; expected "identifier"; SQL statement:
+Delete * FROM QUESTION WHERE id >4 [42001-214]
+2023-08-30 14:30:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete [*]* FROM QUESTION WHERE id >4"; expected "identifier"; SQL statement:
+Delete * FROM QUESTION WHERE id >4 [42001-214]
+2023-08-30 14:30:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM QUESTION WHERE id >4"; expected "identifier"; SQL statement:
+DELETE * FROM QUESTION WHERE id >4 [42001-214]

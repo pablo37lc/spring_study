@@ -47,7 +47,7 @@ public class UserController {
             return "signup_form";
         }
 
-        return "redirct:/";
+        return "redirect:/";
     }
 
     @GetMapping("/login")
