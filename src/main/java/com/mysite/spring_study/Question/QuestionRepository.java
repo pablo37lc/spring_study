@@ -25,11 +25,11 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
             + "     left outer join Answer a on a.question=q "
             + "     left outer join SiteUser ua on a.author=ua "
             + "where "
-            + "      q.subject like %:kw% "
-            + "   or q.content like %:kw% "
-            + "   or uq.username like %:kw% "
-            + "   or a.content like %:kw% "
-            + "   or ua.username like %:kw% ")
+            + "      q.subject like %:keyword% "
+            + "   or q.content like %:keyword% "
+            + "   or uq.username like %:keyword% "
+            + "   or a.content like %:keyword% "
+            + "   or ua.username like %:keyword% ")
     Page<Question> findAllByKeyword(@Param("keyword") String keyword, Pageable pageable);
 
 }
