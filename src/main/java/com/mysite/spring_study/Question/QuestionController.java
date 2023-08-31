@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.mysite.spring_study.answer.Answer;
 import com.mysite.spring_study.answer.AnswerForm;
+import com.mysite.spring_study.answer.AnswerServiece;
 import com.mysite.spring_study.user.SiteUser;
 import com.mysite.spring_study.user.UserService;
 
@@ -28,6 +30,7 @@ import lombok.RequiredArgsConstructor;
 public class QuestionController {
 
     private final QuestionService questionService;
+    private final AnswerServiece answerServiece;
     private final UserService userService;
 
     @GetMapping("/list")
@@ -40,9 +43,12 @@ public class QuestionController {
     }
 
     @GetMapping("/detail/{id}")
-    public String detail(Model model, @PathVariable("id") Integer id, AnswerForm answerForm) {
+    public String detail(Model model, @PathVariable("id") Integer id, AnswerForm answerForm,
+            @RequestParam(value = "page", defaultValue = "0") int page) {
         Question question = this.questionService.getQuestion(id);
+        Page<Answer> paging = this.answerServiece.getAnswerList(page, id);
         model.addAttribute("question", question);
+        model.addAttribute("paging", paging);
         return "question_detail";
     }
 
